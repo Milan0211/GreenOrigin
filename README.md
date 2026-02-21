@@ -1,142 +1,171 @@
-# RootStory - Ayurvedic Herbs Blockchain Verification Platform
+# 🌿 GreenOrigin – Ayurvedic Herbs Traceability & Verification Platform
 
-A consumer-facing web application for Ayurvedic herbal products that offers transparent, trusted, blockchain-verified provenance data accessed via QR codes on packaging.
+**GreenOrigin** is a consumer-facing web application for Ayurvedic herbal products that provides **transparent and trusted product traceability** using **geo-tagging and blockchain-based verification**. Users can scan QR codes on product packaging to view the complete journey of herbs from farm to consumer.
 
-## 🌿 Features
+---
 
-- **QR Code Scanning**: Instant verification of product authenticity using device camera
-- **Product Journey Tracking**: Complete timeline from farm to consumer with detailed event information
-- **Geographic Mapping**: Interactive maps showing the herb's journey across locations
-- **Lab Certifications**: Detailed lab test results and quality certifications
-- **Recall Management**: Real-time recall checking and safety alerts
-- **Blockchain Verification**: Tamper-proof records ensuring complete transparency
-- **Mobile-First Design**: Responsive design optimized for mobile devices
+## 🌱 Features
+
+### 🔍 QR Code Scanning
+Instantly verify product authenticity using QR code scanning.
+
+### 🌿 Product Traceability
+Track the complete journey of Ayurvedic herbs from harvesting to final product.
+
+### 📍 Geo-Tagging System
+View product locations and origin details through geo-tagged records.
+
+### 🔐 Blockchain Verification
+Secure and tamper-proof product information for better transparency.
+
+### 📦 Product Information Display
+View herb details, origin, and processing information.
+
+### 💻 User-Friendly Interface
+Simple and clean design for easy navigation.
+
+### 📱 Mobile Responsive Design
+Works smoothly on both mobile and desktop devices.
+
+### ❓ Ask Us Feature
+Users can ask questions or request information about products.
+
+---
 
 ## 🚀 Tech Stack
 
-- **Frontend**: React 18+ with Vite
-- **Styling**: TailwindCSS with custom earth-tone color palette
-- **UI Components**: Custom components inspired by shadcn/ui
-- **QR Scanning**: ZXing library for robust QR code detection
-- **Maps**: React Leaflet for interactive geographic visualization
-- **State Management**: TanStack Query for API state management
-- **Routing**: React Router for navigation
-- **Notifications**: React Hot Toast for user feedback
+### Frontend
+- React.js with Vite
+- Tailwind CSS
+
+### Backend
+- Node.js
+- Express.js
+
+### Database
+- MongoDB
+
+### Other Tools
+- QR Code Scanner
+- Blockchain Concept Integration
+- REST APIs
+
+---
 
 ## 📱 Pages
 
-1. **Homepage (/)**: Hero scan section, product overview, and featured FAQs
-2. **Scan QR (/scan)**: Full-page QR scanner with real-time feedback
-3. **Product Detail (/product/:id)**: Complete product information with timeline and map
-4. **Recall Check (/recall/:batchCode)**: Batch safety verification and recall information
-5. **About/FAQs (/about)**: Project information and team details
+### 🏠 Home Page (/)
+- Introduction to GreenOrigin
+- QR Scan Option
+- Ask Us Option
 
-## 🎨 Design System
+### 📷 Scan Page (/scan)
+- QR code scanner for product verification
 
-- **Colors**: Earth-tone base (greens, browns) with emerald and amber accents
-- **Typography**: Inter for body text, Nunito for headings
-- **Components**: Card-based layout with soft shadows and consistent spacing
-- **Animations**: Gentle transitions and loading states
-- **Accessibility**: ARIA labels, keyboard navigation, and screen reader support
+### 📦 Product Details Page (/product/:id)
+- Complete product traceability details
+
+### ❓ Ask Us Page (/ask)
+- Users can submit queries related to products
+
+### ℹ️ About Page (/about)
+- Information about GreenOrigin project
+
+---
+
+## 🎨 Design
+
+- Green-themed interface representing nature and herbs
+- Simple and clean layout
+- Easy navigation
+- Responsive design
+
+---
 
 ## 🔧 Installation & Setup
 
-1. **Clone the repository**
-   ```bash
-   git clone <repository-url>
-   cd rootstory-app
-   ```
+### 1️⃣ Clone Repository
 
-2. **Install dependencies**
-   ```bash
-   npm install
-   ```
+```bash
+git clone https://github.com/Milan0211/GreenOrigin.git
+cd GreenOrigin
+```
 
-3. **Start development server**
-   ```bash
-   npm run dev
-   ```
+### 2️⃣ Install Dependencies
 
-4. **Open in browser**
-   Navigate to `http://localhost:5173`
+```bash
+npm install
+```
 
-## 📊 Sample Data
+### 3️⃣ Run Project
 
-The application includes mock data for demonstration:
+```bash
+npm run dev
+```
 
-- **A123XY**: Ashwagandha (Certified)
-- **B456YZ**: Turmeric (Certified)  
-- **C789AB**: Brahmi (Pending)
-- **D999XX**: Ginseng (Recalled - for testing recall functionality)
+### 4️⃣ Open Browser
+
+```
+http://localhost:5173
+```
+
+---
 
 ## 🔍 Key Components
 
-- **QRScanner**: Camera-based QR code scanning with error handling
-- **EventTimeline**: Vertical timeline showing product journey
-- **GeoMap**: Interactive map with event markers
-- **CertificateBadge**: Lab test result display with status indicators
-- **Layout**: Responsive navigation and footer
+### QR Scanner
+Used to scan product QR codes.
 
-## 🌐 API Endpoints (Mock)
+### Product Tracking System
+Displays product origin and journey.
 
-- `GET /api/product/:code` - Fetch product details and journey
-- `GET /api/recall/:batchCode` - Check recall status
-- `GET /api/events/:eventId` - Get detailed event information
+### Geo-Tagging Module
+Shows product location information.
+
+### Comparative Chart
+Displays product comparison data.
+
+### Ask Us Module
+Allows users to send queries.
+
+---
 
 ## 🎯 Features Implemented
 
-✅ QR Code Scanning with camera access  
-✅ Product journey timeline with expandable details  
-✅ Interactive geographic mapping  
-✅ Lab certification display with status badges  
-✅ Recall checking and safety alerts  
-✅ Responsive mobile-first design  
-✅ Loading states and error handling  
-✅ Toast notifications for user feedback  
-✅ Accessibility features (ARIA labels, keyboard navigation)  
-✅ Modern UI with earth-tone color scheme  
-✅ Blockchain hash display and copying  
+- ✅ QR Code Scanning
+- ✅ Product Traceability
+- ✅ Geo-tagging Integration
+- ✅ Blockchain-based Verification Concept
+- ✅ Product Information System
+- ✅ Responsive Design
+- ✅ User Friendly Interface
+- ✅ Ask Us Feature
+- ✅ Clean UI Design
+
+---
 
 ## 🚀 Deployment
 
-The application is ready for deployment to any static hosting service:
+To build the project:
 
 ```bash
 npm run build
 ```
 
-The built files will be in the `dist` directory.
+Files will be created in:
 
-## 📱 Mobile Experience
-
-- Touch-friendly interface with large tap targets
-- Camera integration for QR scanning
-- Responsive design that works on all screen sizes
-- Optimized for mobile-first usage
-
-## 🔒 Security & Privacy
-
-- No personal data collection
-- Secure camera access with user permission
-- Blockchain verification for data integrity
-- Privacy-first design principles
-
-## 🏆 SIH Hackathon
-
-Built for the Smart India Hackathon 2025, this project demonstrates:
-
-- Modern web development practices
-- Blockchain integration concepts
-- Supply chain transparency solutions
-- User-centered design approach
-- Mobile-first development
-
-## 📞 Support
-
-For questions or support, contact:
-- Email: info@rootstory.com
-- Phone: +91 98765 43210
+```
+dist/
+```
 
 ---
 
-**Built with ❤️ for the SIH Hackathon 2025**
+## 🏆 Smart India Hackathon Project
+
+This project was developed for **Smart India Hackathon (SIH)** and demonstrates:
+
+- Supply chain transparency
+- Blockchain-based verification
+- Geo-tagging system
+- QR-based product tracking
+- Modern web development
