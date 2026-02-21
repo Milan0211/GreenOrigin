@@ -76,39 +76,28 @@ const About = () => {
 
   const team = [
     {
-      name: "Arshad Shaikh",
-      role: "React Native App Developer",
+      name: "Avanshika Rana",
       description:
-        "Expert in mobile app development and cross-platform solutions",
+        "Contributed actively to the development and success of the project.",
     },
     {
-      name: "Aryan Joshi",
-      role: "React Web Developer, UI/UX Developer",
+      name: "Milan",
       description:
-        "Specialist in modern web technologies and user experience design",
+        "Role in building and completing this project through teamwork and dedication.",
     },
     {
-      name: "Bhavik Thakkar",
-      role: "Blockchain / Hyperledger Fabric Specialist",
+      name: "Sagar",
       description:
-        "Expert in distributed systems and blockchain technology implementation",
+        "Collaborated in all stages of the project to ensure its successful completion.",
     },
     {
-      name: "Brahmi Matey",
-      role: "AI Integrator, Full Stack Developer",
+      name: "Aman Yadav",
       description:
-        "AI and machine learning integration specialist with full-stack expertise",
+        "Contributed ideas, effort, and support throughout the project.",
     },
     {
-      name: "Mrunal Shah",
-      role: "Team Co-ordinator",
-      description: "Valuable team member contributing to project success",
-    },
-    {
-      name: "Pranjal Chaudhari",
-      role: "Team Leader, Full Stack Developer",
-      description:
-        "Project leader with comprehensive full-stack development expertise",
+      name: "Gourav Chauhan",
+      description: "Actively participated in the development and refinement of the project.",
     },
   ];
 
@@ -154,7 +143,7 @@ const About = () => {
       <section className="py-20 bg-gradient-to-br from-herb-500 to-herb-600 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-5xl md:text-6xl font-display font-bold mb-6">
-            About ROOTSTORY
+            About GreenOrigin
           </h1>
           <p className="text-xl md:text-2xl text-white/90 max-w-4xl mx-auto leading-relaxed">
             We're revolutionizing the Ayurvedic industry by combining ancient
@@ -172,7 +161,7 @@ const About = () => {
               Our Mission
             </h2>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto">
-              ROOTSTORY brings Ayurveda's ancient wisdom into the modern world
+              GREENORIGIN brings Ayurveda's ancient wisdom into the modern world
               with blockchain-powered trust and transparency, ensuring every
               herb you consume is authentic, safe, and sustainably sourced.
             </p>
@@ -246,16 +235,12 @@ const About = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-display font-bold text-gray-900 mb-6">
-              Meet the Team Behind the Magic
+              The Team Behind GreenOrigin
             </h2>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-              We are six innovators, dreamers, and problem-solvers who came
-              together to turn a vision into reality for the Ministry of Ayush –
-              SIH 2025 challenge. United by curiosity, caffeine, and a shared
-              passion for technology and Ayurveda, we've woven together code,
-              design, and blockchain wizardry to build a solution that traces
-              every herb from farm to formulation.
-            </p>
+  GreenOrigin was developed as part of our capstone project — a collaborative effort by our team to explore how technology can bring transparency to the herbal supply chain. Combining our interests in software development, design, and blockchain fundamentals, we created this prototype to demonstrate how herbs can be traced from source to product using modern digital tools.
+</p>
+
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -318,7 +303,7 @@ const About = () => {
               Our Values
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              The principles that guide everything we do at ROOTSTORY
+              The principles that guide everything we do at GreenOrigin.
             </p>
           </div>
 

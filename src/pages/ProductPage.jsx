@@ -1,5 +1,8 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
+import ComparativeChart from "../components/ComparativeChart";
+
+
 import {
   ArrowLeft,
   Shield,
@@ -219,22 +222,27 @@ const ProductPage = () => {
 
           {/* Sidebar */}
           <div className="space-y-6">
-            {/* Lab Certificates */}
-            <Card>
-              <CardHeader>
-                <h2 className="text-xl font-semibold text-earth-900 flex items-center space-x-2">
-                  <Shield className="h-5 w-5" />
-                  <span>Lab Certificates</span>
-                </h2>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-3">
-                  {product.certificates.map((cert, index) => (
-                    <CertificateBadge key={index} certificate={cert} />
-                  ))}
-                </div>
-              </CardContent>
-            </Card>
+            
+            {/* Comparative Analysis */}
+              {product.comparison && (
+                <Card>
+                  <CardHeader>
+                    <h2 className="text-xl font-semibold text-earth-900 flex items-center space-x-2">
+                      <Shield className="h-5 w-5" />
+                      <span>Comparative Analysis</span>
+                    </h2>
+                  </CardHeader>
+
+                  <CardContent>
+                    <p className="text-sm text-earth-600 mb-4 capitalize">
+                      This batch vs market average {product.herbName} quality
+                    </p>
+
+                    <ComparativeChart data={product.comparison} />
+                  </CardContent>
+                </Card>
+              )}
+
 
             {/* Organic Certification */}
             <Card>
@@ -258,55 +266,7 @@ const ProductPage = () => {
                 </div>
               </CardContent>
             </Card>
-
-            {/* Actions */}
-            <Card>
-              <CardHeader>
-                <h2 className="text-xl font-semibold text-earth-900">
-                  Actions
-                </h2>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-3">
-                  <Button
-                    variant="outline"
-                    onClick={handleRecallCheck}
-                    className="w-full flex items-center justify-center space-x-2"
-                  >
-                    <Shield className="h-4 w-4" />
-                    <span>Check Recall Status</span>
-                  </Button>
-
-                  <Button
-                    variant="outline"
-                    onClick={async () => {
-                      try {
-                        if (navigator.clipboard && navigator.clipboard.writeText) {
-                          await navigator.clipboard.writeText(product.blockchainHash);
-                          toast.success("Blockchain hash copied to clipboard");
-                        } else {
-                          // Fallback for older browsers
-                          const textArea = document.createElement('textarea');
-                          textArea.value = product.blockchainHash;
-                          document.body.appendChild(textArea);
-                          textArea.select();
-                          document.execCommand('copy');
-                          document.body.removeChild(textArea);
-                          toast.success("Blockchain hash copied to clipboard");
-                        }
-                      } catch (error) {
-                        console.error("Failed to copy to clipboard:", error);
-                        toast.error("Failed to copy to clipboard");
-                      }
-                    }}
-                    className="w-full flex items-center justify-center space-x-2"
-                  >
-                    <ExternalLink className="h-4 w-4" />
-                    <span>Copy Blockchain Hash</span>
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
+            
           </div>
         </div>
       </div>

@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+  import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import {
   QrCode,
@@ -255,6 +255,7 @@ const HomePage = () => {
 
             {/* Enhanced CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16">
+              
               <button
                 onClick={() => navigate("/scan")}
                 className="btn-scan flex items-center space-x-3 px-8 py-4 text-lg font-semibold group"
@@ -263,6 +264,17 @@ const HomePage = () => {
                 <span>Scan QR Code</span>
                 <Sparkles className="h-5 w-5 group-hover:rotate-12 transition-transform duration-200" />
               </button>
+
+              <Button
+                variant="primary"
+                size="lg"
+                onClick={() => navigate("/ask")}
+                className="flex items-center space-x-3 px-8 py-4 text-lg font-semibold group"
+               >
+               <HelpCircle className="h-5 w-5" />
+               <span>Ask Herbal AI</span>
+               </Button>
+
 
               <Button
                 variant="secondary"
@@ -320,7 +332,7 @@ const HomePage = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-nunito font-bold text-gray-900 mb-6">
-              Why Choose RootStory?
+              Why Choose GreenOrigin?
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               We combine ancient Ayurvedic wisdom with cutting-edge blockchain
@@ -599,7 +611,7 @@ const HomePage = () => {
               Frequently Asked Questions
             </h2>
             <p className="text-xl text-gray-600">
-              Everything you need to know about RootStory's blockchain
+              Everything you need to know about GreenOrigin's blockchain
               verification system
             </p>
           </div>
@@ -652,31 +664,8 @@ const HomePage = () => {
           </div>
 
           {/* Additional Help */}
-          <div className="mt-12 text-center">
-            <div className="rounded-2xl p-8 text-white" style={{ backgroundImage: 'linear-gradient(135deg, #3E8E63 0%, #22C55E 100%)' }}>
-              <h3 className="text-2xl font-nunito font-bold mb-4">
-                Still have questions?
-              </h3>
-              <p className="text-white/90 mb-6">
-                Our support team is here to help you understand our platform and
-                verify your products.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <a
-                  href="mailto:support@rootstory.com"
-                  className="bg-white text-herbal-green px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition-colors duration-300"
-                >
-                  Contact Support
-                </a>
-                <a
-                  href="tel:+91-800-123-4567"
-                  className="bg-transparent border-2 border-white text-white px-6 py-3 rounded-lg font-medium hover:bg-white hover:text-herbal-green transition-colors duration-300"
-                >
-                  Call Us
-                </a>
-              </div>
-            </div>
-          </div>
+          
+          
         </div>
       </section>
 

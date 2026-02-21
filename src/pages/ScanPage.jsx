@@ -271,7 +271,7 @@ const ScanPage = () => {
                   onClick={() => setManualCode("C789AB")}
                   className="w-full text-left px-3 py-2 bg-gray-50 hover:bg-herbal-green/10 rounded-lg transition-colors duration-200 text-sm font-mono"
                 >
-                  C789AB - Brahmi Leaf Extract
+                  C789AB - Neem Leaf Extract
                 </button>
               </div>
             </div>

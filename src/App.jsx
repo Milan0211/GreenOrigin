@@ -5,11 +5,13 @@ import { useState, useEffect } from "react";
 import HomePage from "./pages/HomePage";
 import ScanPage from "./pages/ScanPage";
 import ProductPage from "./pages/ProductPage";
-import RecallPage from "./pages/RecallPage";
+// import RecallPage from "./pages/RecallPage";
 import AboutPage from "./pages/AboutPage";
 import DownloadAppPage from "./pages/DownloadAppPage";
 import Layout from "./components/Layout";
 import Loader from "./components/Loader";
+import AskPage from "./pages/AskPage";
+
 
 // Create a client
 const queryClient = new QueryClient({
@@ -42,9 +44,11 @@ function App() {
               <Route path="/" element={<HomePage />} />
               <Route path="/scan" element={<ScanPage />} />
               <Route path="/product/:code" element={<ProductPage />} />
-              <Route path="/recall/:batchCode" element={<RecallPage />} />
+              {/* <Route path="/recall/:batchCode" element={<RecallPage />} /> */}
               <Route path="/about" element={<AboutPage />} />
               <Route path="/download" element={<DownloadAppPage />} />
+              <Route path="/ask" element={<AskPage />} />
+
             </Routes>
           </Layout>
           <Toaster

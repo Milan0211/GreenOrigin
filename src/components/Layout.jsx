@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, QrCode, Home, Info, Smartphone } from "lucide-react";
 import Button from "./ui/Button";
-import logo from "../assets/logo.png";
+import logo from "../assets/logo.jpg";
 import RootScrollbar from "./RootScrollbar";
 
 const Layout = ({ children, isLoading }) => {
@@ -12,7 +12,7 @@ const Layout = ({ children, isLoading }) => {
   const navigation = [
     { name: "Home", href: "/", icon: Home },
     { name: "Scan", href: "/scan", icon: QrCode },
-    { name: "App", href: "/download", icon: Smartphone },
+    { name: "Ask-us", href: "/ask", icon: Smartphone },
     { name: "About", href: "/about", icon: Info },
   ];
 
@@ -47,7 +47,7 @@ const Layout = ({ children, isLoading }) => {
                 />
                 <div>
                   <span className="text-2xl font-display font-bold text-herb-700">
-                    RootStory
+                    GreenOrigin
                   </span>
                 </div>
               </Link>
@@ -150,11 +150,11 @@ const Layout = ({ children, isLoading }) => {
                   className="w-10 h-10 border-2 border-white rounded-xl"
                 />
                 <span className="text-2xl font-display font-bold text-white">
-                  ROOTSTORY
+                  GreenOrigin
                 </span>
               </div>
               <p className="text-slate-300 text-base leading-relaxed mb-6 max-w-md">
-                No ayurphobia, only RootStory. Transparent, blockchain-verified
+                No ayurphobia, only GreenOrigin. Transparent, blockchain-verified
                 provenance for Ayurvedic herbs with cutting-edge technology.
               </p>
               <div className="flex space-x-4">
@@ -194,12 +194,7 @@ const Layout = ({ children, isLoading }) => {
                 >
                   Download App
                 </Link>
-                <Link
-                  to="/recall/D999XX"
-                  className="block text-slate-300 hover:text-white transition-colors text-sm"
-                >
-                  Recall Check
-                </Link>
+                
                 <Link
                   to="/"
                   onClick={handleNavClick}
@@ -216,11 +211,11 @@ const Layout = ({ children, isLoading }) => {
               <div className="space-y-3 text-sm text-slate-300">
                 <div className="flex items-center space-x-2">
                   <div className="w-4 h-4 bg-blue-500 rounded-full"></div>
-                  <span>info@rootstory.com</span>
+                  <span>info@greenorigin.com</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <div className="w-4 h-4 bg-emerald-500 rounded-full"></div>
-                  <span>+91 98765 43210</span>
+                  <span>+91 1234567890</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <div className="w-4 h-4 bg-amber-500 rounded-full"></div>
@@ -233,8 +228,7 @@ const Layout = ({ children, isLoading }) => {
           <div className="border-t border-slate-700/50 mt-12 pt-8">
             <div className="text-center">
               <p className="text-sm text-slate-400 mb-4">
-                © 2025 ROOTSTORY. All rights reserved. Built with ❤️ for SIH
-                Hackathon 2025.
+                © 2025 GreenOrigin. All rights reserved. Built with ❤️ 
               </p>
               <div className="flex justify-center space-x-6 text-sm text-slate-400">
                 <span className="hover:text-white transition-colors cursor-pointer">
